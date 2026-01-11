@@ -46,7 +46,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
             <a
-              href="https://github.com"
+              href="https://github.com/Yadi-hub"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white bg-opacity-10 backdrop-blur-sm rounded-full hover:scale-110 hover:bg-opacity-20 transition-all duration-300 text-white"
@@ -62,7 +62,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:shmelissolomon12@gmail.com"
               className="p-3 bg-white bg-opacity-10 backdrop-blur-sm rounded-full hover:scale-110 hover:bg-opacity-20 transition-all duration-300 text-white"
             >
               <Mail className="w-6 h-6" />

@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Yadi-hub"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
@@ -34,7 +34,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:shmelissolomon12@gmail.com"
                 className="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -63,9 +63,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-2 text-gray-400">
-              <p>your.email@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>shmelissolomon12@gmail.com</p>
+              <p>+251969639588</p>
+              <p>Bale Robe, Ethiopia</p>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ const Footer = () => {
           <p className="text-gray-400 flex items-center justify-center space-x-1">
             <span>© {currentYear} Made with</span>
             <Heart className="w-4 h-4 text-red-500" />
-            <span>by Your Name</span>
+            <span>by Shmelis Solomon</span>
           </p>
         </div>
       </div>

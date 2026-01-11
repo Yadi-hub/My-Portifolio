@@ -36,7 +36,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              With over 3 years of experience in web development, I specialize in 
+              With over 1 years of experience in web development, I specialize in 
               creating modern, responsive applications using the latest technologies. 
               I'm passionate about writing clean, efficient code and creating 
               user-centered designs.
