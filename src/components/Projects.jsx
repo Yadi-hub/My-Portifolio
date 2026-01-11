@@ -62,7 +62,7 @@ const Projects = () => {
 
         {/* Featured Projects */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          {featuredProjects.map((project, index) => (
+          {featuredProjects.map((project) => (
             <div
               key={project.id}
               className="group glass dark:glass-dark rounded-xl overflow-hidden hover:scale-105 transition-all duration-300"

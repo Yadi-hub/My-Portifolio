@@ -1,19 +1,39 @@
 import React from 'react';
 
+// Generate random values outside component to avoid re-render issues
+const generateStars = () => 
+  Array.from({ length: 50 }, (_, i) => ({
+    id: i,
+    left: Math.random() * 100,
+    top: Math.random() * 100,
+    animationDelay: Math.random() * 3,
+    animationDuration: 2 + Math.random() * 2,
+  }));
+
+const generateMeteors = () => 
+  Array.from({ length: 3 }, (_, i) => ({
+    id: i,
+    left: Math.random() * 100,
+    animationDelay: i * 2,
+  }));
+
+const stars = generateStars();
+const meteors = generateMeteors();
+
 const AnimatedBackground = () => {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
       {/* Stars */}
       <div className="absolute inset-0">
-        {[...Array(50)].map((_, i) => (
+        {stars.map((star) => (
           <div
-            key={i}
+            key={star.id}
             className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${2 + Math.random() * 2}s`,
+              left: `${star.left}%`,
+              top: `${star.top}%`,
+              animationDelay: `${star.animationDelay}s`,
+              animationDuration: `${star.animationDuration}s`,
             }}
           />
         ))}
@@ -21,13 +41,13 @@ const AnimatedBackground = () => {
 
       {/* Meteors */}
       <div className="absolute inset-0">
-        {[...Array(3)].map((_, i) => (
+        {meteors.map((meteor) => (
           <div
-            key={i}
+            key={meteor.id}
             className="absolute w-1 h-20 bg-gradient-to-b from-blue-400 to-transparent rounded-full animate-meteor opacity-70"
             style={{
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${i * 2}s`,
+              left: `${meteor.left}%`,
+              animationDelay: `${meteor.animationDelay}s`,
               animationDuration: '5s',
             }}
           />
